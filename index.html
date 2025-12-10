@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Web "Coalición" - Presentación</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Las diapositivas se cargarán dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/zoom/zoom.js"></script>
+
+    <script>
+        // Cargar todas las diapositivas
+        async function loadSlides() {
+            const slidesContainer = document.querySelector('.reveal .slides');
+            const slideCount = 20;
+            
+            for (let i = 1; i <= slideCount; i++) {
+                try {
+                    const response = await fetch(`slides/slide (${i}).html`);
+                    const content = await response.text();
+                    const section = document.createElement('section');
+                    section.innerHTML = content;
+                    slidesContainer.appendChild(section);
+                } catch (error) {
+                    console.error(`Error loading slide ${i}:`, error);
+                }
+            }
+            
+            // Inicializar Reveal.js después de cargar todas las diapositivas
+            Reveal.initialize({
+                hash: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                transitionSpeed: 'default', // default/fast/slow
+                backgroundTransition: 'fade',
+                slideNumber: 'c/t',
+                showSlideNumber: 'all',
+                controls: true,
+                progress: true,
+                center: true,
+                touch: true,
+                loop: false,
+                rtl: false,
+                navigationMode: 'default',
+                shuffle: false,
+                fragments: true,
+                fragmentInURL: true,
+                embedded: false,
+                help: true,
+                pause: true,
+                showNotes: false,
+                autoPlayMedia: null,
+                preloadIframes: null,
+                autoSlide: 0,
+                autoSlideStoppable: true,
+                mouseWheel: false,
+                hideInactiveCursor: true,
+                hideCursorTime: 5000,
+                previewLinks: false,
+                width: "100%",
+                height: "100%",
+                margin: 0,
+                minScale: 1,
+                maxScale: 1,
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
+            });
+        }
+
+        // Cargar diapositivas al iniciar
+        loadSlides();
+    </script>
+</body>
+</html>

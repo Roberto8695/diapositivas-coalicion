@@ -1,0 +1,154 @@
+DIAPOSITIVA 1 — PORTADA
+
+Título: Plataforma Web “Coalición” para la Difusión de Información Verificada
+Autor: [Tu nombre]
+Tutor: [Nombre]
+Carrera: Ingeniería de Sistemas / Informática
+Fecha: 2025
+Universidad: UPDS
+
+DIAPOSITIVA 2 — ÍNDICE
+
+Capítulo I: Marco Teórico-Conceitual
+
+Capítulo II: Análisis y Diseño del Sistema
+
+Ejemplo Integrador
+
+Conclusiones
+
+Referencias
+
+🟦 CAPÍTULO I – MARCO TEÓRICO
+DIAPOSITIVA 3 — Introducción
+
+La desinformación es uno de los principales problemas que afectan la estabilidad democrática en Bolivia.
+La Coalición surge como una iniciativa interinstitucional para combatir la desinformación mediante información verificada.
+La Plataforma Web “Coalición” se propone como un sistema moderno para centralizar, gestionar y difundir contenido verificado a nivel nacional.
+
+DIAPOSITIVA 4 — Antecedentes
+
+La desinformación se expande rápidamente en redes sociales.
+La ciudadanía carece de herramientas confiables para identificar información falsa.
+Las organizaciones de la Coalición no cuentan con un sistema centralizado para gestionar contenido verificado.
+Se requiere una plataforma moderna, segura y escalable que integre procesos de verificación.
+
+DIAPOSITIVA 5 — Planteamiento del Problema
+
+No existe una plataforma centralizada que consolide información verificada.
+Los procesos actuales son manuales y dispersos.
+La ciudadanía recibe información contradictoria o falsa.
+El proyecto busca ofrecer un sistema digital unificado que mejore el acceso a información confiable.
+
+DIAPOSITIVA 6 — Objeto de Estudio y Pregunta Central
+
+Objeto de estudio: Desarrollo de una plataforma web para gestionar y difundir información verificada.
+Pregunta de investigación:
+¿Cómo la Plataforma Web “Coalición” puede mejorar la difusión de información verificada y reducir la desinformación en Bolivia?
+
+DIAPOSITIVA 7 — Objetivos
+
+Objetivo general:
+Desarrollar la plataforma web para fortalecer la difusión de información verificada.
+Objetivos específicos:
+Analizar requerimientos, diseñar arquitectura, implementar backend y frontend, integrar servicios cloud y evaluar impacto en la ciudadanía.
+
+DIAPOSITIVA 8 — Variables de Investigación
+
+Variable independiente:
+Desarrollo de la Plataforma Web “Coalición”.
+Variable dependiente:
+Mejora en la difusión de información verificada y mitigación de la desinformación.
+Incluye indicadores como rendimiento, disponibilidad, visitas y alcance digital.
+
+DIAPOSITIVA 9 — Delimitación y Tipología
+
+Delimitación temática: Sistema web de información verificada.
+Temporal: 4 meses.
+Geográfica: Nacional, en entornos digitales.
+Institucional: Ejecutado por la Coalición.
+Tipología: Estudio exploratorio y explicativo.
+Diseño: Investigación no experimental y transversal.
+
+DIAPOSITIVA 10 — Justificación
+
+Técnica: Uso de tecnologías modernas (Node.js, PostgreSQL, Next.js, Cloudinary, Render, Vercel).
+Económica: Infraestructura optimizada con servicios de bajo costo.
+Social: Brinda acceso confiable a información verificada para toda la ciudadanía boliviana.
+
+🟦 CAPÍTULO II – ANÁLISIS Y DISEÑO DEL SISTEMA
+DIAPOSITIVA 11 — Fundamentación del Sistema
+
+El sistema se basa en la necesidad de organizar, verificar y difundir información confiable.
+Integra procesos como autenticación, publicación, categorización y almacenamiento de evidencias.
+Funciona como un sistema de información especializado en contenidos verificados.
+
+DIAPOSITIVA 12 — Metodología de Desarrollo
+
+Se utiliza la metodología ágil Scrum.
+Permite trabajar en iteraciones cortas, priorizar funcionalidades críticas y adaptarse al contexto cambiante de la Coalición.
+Es adecuada para un proyecto de 4 meses con requerimientos evolutivos.
+
+DIAPOSITIVA 13 — Análisis de Requisitos
+
+Requisitos funcionales:
+Gestión de usuarios, roles, publicaciones, evidencias, reportes de desinformación.
+Requisitos no funcionales:
+Seguridad, escalabilidad, disponibilidad, rendimiento, interfaz accesible.
+
+DIAPOSITIVA 14 — Actores Identificados
+
+Ciudadano (usuario final).
+Verificador/Editor.
+Administrador del sistema.
+Servicios externos: Cloudinary, Render, Vercel.
+Estos actores permiten identificar flujos principales y responsabilidades del sistema.
+
+DIAPOSITIVA 15 — Casos de Uso Principales
+
+Registrar contenido verificado.
+Consultar publicaciones verificadas.
+Subir evidencias.
+Autenticarse.
+Gestionar reportes de desinformación.
+Modelo basado en interacción entre ciudadano, verificador y administrador.
+
+DIAPOSITIVA 16 — Diagrama de Casos de Uso
+
+(Insertar imagen PNG del diagrama)
+El diagrama representa las interacciones entre actores y funcionalidades del sistema: ciudadanía, verificadores, administrador y servicios externos.
+
+DIAPOSITIVA 17 — Arquitectura del Sistema
+
+Arquitectura desacoplada:
+Backend Node.js / Express (API REST).
+Frontend Next.js (sitio estático).
+Base de datos PostgreSQL en Render.
+Almacenamiento multimedia en Cloudinary.
+Despliegue en Vercel y Render.
+Modelo escalable, seguro y moderno.
+
+DIAPOSITIVA 18 — Tecnologías Utilizadas
+
+Backend: Node.js, Express, JWT, bcryptjs, multer.
+Frontend: Next.js, React, Tailwind CSS.
+Base de datos: PostgreSQL.
+Servicios externos: Cloudinary, Render, Vercel.
+API REST consumida mediante Axios.
+
+🟦 EJEMPLO INTEGRADOR + CIERRE
+DIAPOSITIVA 19 — Ejemplo Integrador
+
+Un reporte ciudadano ingresa al sistema.
+El verificador analiza el contenido, adjunta evidencias y publica un desmentido.
+La ciudadanía accede inmediatamente a la información verificada a través del frontend.
+El proceso conecta teoría de sistemas, análisis de requisitos y arquitectura tecnológica.
+
+DIAPOSITIVA 20 — Conclusiones y Referencias
+
+La Plataforma Web “Coalición” responde directamente al problema de desinformación nacional.
+Integra teoría, análisis, diseño y tecnología moderna en un sistema funcional y escalable.
+Referencias (APA 7):
+– Fuentes académicas sobre desinformación.
+– Documentos de la Coalición.
+– Documentación oficial de Node.js, Next.js, PostgreSQL, Scrum, Render y Vercel.
