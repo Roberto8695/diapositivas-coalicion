@@ -25,11 +25,8 @@
 }
 
 .reveal .slides > section {
-    height: 100%;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    padding: 20px !important;
+    height: 100vh;
+    
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
@@ -111,7 +108,9 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.18);
     width: 100%;
-    max-width: 1100px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
     box-sizing: border-box;
 }
 
@@ -123,10 +122,27 @@
     padding: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 1100px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
     box-sizing: border-box;
 }
 
+/* Asegurar que el contenido dentro de flex-center no se desborde */
+.content-box > *:not(.grid):not(.timeline),
+.content-box-light > *:not(.grid):not(.timeline) {
+    flex-shrink: 0;
+}
+
+.controls-arrow{
+    color: red;
+}
+.controls-arrow::before{
+    color: red
+}
+.controls-arrow::after{
+    color: red
+}
 /* Tarjetas */
 .card {
     background: rgba(255, 255, 255, 0.15);
